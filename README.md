@@ -10,12 +10,12 @@ In order to get these files, trim your data however you see fit, and then comput
 
 with a missingness filter of 99% (--geno) and minor allele frequence of 5% (--maf)
 ```
-./plink --file example/example --recode12 --geno .01 --maf .05 --dog --out example_miss01maf05
+./plink --file example/example --recode12 --geno .01 --maf .05 --dog --out example/example_miss01maf05
 ```
 and pruning of LD values less than 0.8
 ```
-./plink --file example/example_miss01maf05 --indep-pairwise 50 5 .5 --dog --out example_ld08miss01maf05
-./plink --file example/example_miss01maf05 --exclude example_ld08miss01maf05.prune.out --make-bed --out example_ld08miss01maf05
+./plink --file example/example_miss01maf05 --indep-pairwise 50 5 .5 --dog --out example/example_ld08miss01maf05
+./plink --file example/example_miss01maf05 --exclude example_ld08miss01maf05.prune.out --make-bed --out example/example_ld08miss01maf05
 ```
 
 Finally, we compute our IBS distance matrix:
