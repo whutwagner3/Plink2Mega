@@ -15,7 +15,7 @@ with a missingness filter of 99% (--geno) and minor allele frequence of 5% (--ma
 and pruning of LD values less than 0.8
 ```
 ./plink --file example/example_miss01maf05 --indep-pairwise 50 5 .5 --dog --out example/example_ld08miss01maf05
-./plink --file example/example_miss01maf05 --exclude example_ld08miss01maf05.prune.out --make-bed --out example/example_ld08miss01maf05
+./plink --file example/example_miss01maf05 --exclude example/ example_ld08miss01maf05.prune.out --dog --make-bed --out example/example_ld08miss01maf05
 ```
 
 Finally, we compute our IBS distance matrix:
