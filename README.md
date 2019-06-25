@@ -30,3 +30,4 @@ Command:
 ```
 python3 plink2meg.py -i example/example_ld08miss01maf05 -o example/example_ld08miss01maf05
 ```
+Opening example/example_ld08miss01maf05.meg in MEGA7 will show: 
