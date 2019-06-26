@@ -32,3 +32,14 @@ python3 plink2meg.py -i example/example_ld08miss01maf05 -o example/example_ld08m
 ```
 Opening example/example_ld08miss01maf05.meg in MEGA7 will show: 
 ![Screenshot](example/example.png)
+
+## Downloading Plink
+To download plink for Mac/ OSX run 
+```
+./downloadingplink.sh -o osx
+```
+
+To download plink for linuz run
+```
+./downloadingplink.sh -o linux
+```
